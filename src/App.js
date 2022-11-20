@@ -9,7 +9,7 @@ function App() {
   const next = () => {
     const condition = index < images.length -1 ? true : false;
     condition ? setIndex(index +1) : setIndex(0);
-    setCurrentImg(images[index]);
+    setCurrentImg(images[index]); 
   }
 
   const previous = () => {
@@ -26,8 +26,8 @@ function App() {
         <div className="img__container">
           <img src={require(`./images/${currentImg}`)} alt='cat' style={{maxWidth: '600px'}}></img>
         </div>
-        <button onClick={() => previous()}>previous</button>
-        <button onClick={() => next()}>next</button>
+        <button onClick={() => previous()}>Previous</button>
+        <button onClick={() => next()}>Next</button>
       </div>
     </>
   );
